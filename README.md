@@ -1,3 +1,14 @@
+# CSS2208 : Projects 2
+
+โปรเจคเว็บไซต์ talks travel
+จัดทำโดย
+1.นายสิริภณ เวียงสิมา 59122519048
+2.นางสาวธิดามาศ ผาอิดดี 59122519064
+3.นางสาวฟาริดา จำนงค์พรต 59122519066
+
+มหาวิทยาลัยราชภัฏสวนสุนันทา
+คณะเทคโนโลยีอุตสาหกรรม สาขาวิศวกรรมคอมพิวเตอร์
+
 # Talkstravel
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.5.
