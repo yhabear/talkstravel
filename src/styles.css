@@ -2,4 +2,7 @@
 
 body {
     margin: 0px;
+    background: url(assets/img/bg.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
 }
