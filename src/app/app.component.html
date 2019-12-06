@@ -13,29 +13,29 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">หน้าแรก</a>
+                    <a class="nav-link" routerLink="/Home" routerLinkActive="active">หน้าแรก</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true">
                     รีวิว
                   </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                        <a class="dropdown-item" href="#">โรงแรม</a>
-                        <a class="dropdown-item" href="#">อาหาร</a>
-                        <a class="dropdown-item" href="#">สถานที่</a>
+                        <a class="dropdown-item" routerLink="/Hotel" routerLinkActive="active">โรงแรม</a>
+                        <a class="dropdown-item" routerLink="/Foods" routerLinkActive="active">อาหาร</a>
+                        <a class="dropdown-item" routerLink="/Place" routerLinkActive="active">สถานที่</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">BLOGS</a>
+                    <a class="nav-link" routerLink="/BLOGS" routerLinkActive="active">BLOGS</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true">
                     อีเว้นท์
                   </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item" href="#">ประเพณี</a>
-                        <a class="dropdown-item" href="#">สินค้า</a>
-                        <a class="dropdown-item" href="#">การแสดง/คอนเสิร์ต</a>
+                        <a class="dropdown-item" routerLink="/Tradition" routerLinkActive="active">ประเพณี</a>
+                        <a class="dropdown-item" routerLink="/Product" routerLinkActive="active">สินค้า</a>
+                        <a class="dropdown-item" routerLink="/Display" routerLinkActive="active">การแสดง/คอนเสิร์ต</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -43,8 +43,8 @@
                     ท่องเที่ยว
                   </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                        <a class="dropdown-item" href="#">จังหวัดแนะนำ</a>
-                        <a class="dropdown-item" href="#">6 จังหวัดห้ามพลาด</a>
+                        <a class="dropdown-item" routerLink="/Province" routerLinkActive="active">จังหวัดแนะนำ</a>
+                        <a class="dropdown-item" routerLink="/HotPro" routerLinkActive="active">6 จังหวัดห้ามพลาด</a>
                     </div>
                 </li>
             </ul>
@@ -59,35 +59,6 @@
             </ul>
         </div>
     </nav>
-
-    <div class="container">
-
-        <h1>Fixed Top Menu</h1>
-        <h2>Scroll this page to see the effect</h2>
-        <h2>The navigation bar will stay at the top of the page while scrolling</h2>
-
-        <p class="text-light bg-dark rounded">Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>
-    </div>
-
 </body>
 
 <router-outlet></router-outlet>

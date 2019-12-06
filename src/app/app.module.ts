@@ -1,29 +1,82 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { AppRoutingModule } from './app-routing.module';
+import 'bootstrap/dist/js/bootstrap.bundle';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { BlogsComponent } from './blogs/blogs.component';
+import { PagenofoundComponent } from './pagenofound/pagenofound.component';
+import { HotelComponent } from './hotel/hotel.component';
+import { FoodsComponent } from './foods/foods.component';
+import { PlaceComponent } from './place/place.component';
+import { TraditionComponent } from './tradition/tradition.component';
+import { ProductComponent } from './product/product.component';
+import { DisplayComponent } from './display/display.component';
+import { ProvinceComponent } from './province/province.component';
+import { HotProvinceComponent } from './hot-province/hot-province.component';
 
 // Routes
-export const router: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'components/login', component: LoginComponent },
-  
-]
+const appRoutes: Routes = [
+  { path: 'Home', component: HomeComponent },
+  { path: 'Login', component: LoginComponent },
+  { path: 'Blogs', component: BlogsComponent },
+  { path: 'Hotel', component: HotelComponent },
+  { path: 'Foods', component: FoodsComponent },
+  { path: 'Place', component: PlaceComponent },
+  { path: 'Tradition', component: TraditionComponent },
+  { path: 'Product', component: ProductComponent },
+  { path: 'Display', component: DisplayComponent },
+  { path: 'Province', component: ProvinceComponent },
+  { path: 'HotPro', component: HotProvinceComponent },
+  {
+    path: '',
+    redirectTo: '/Home',
+    pathMatch: 'full'
+  },
+  { path: '**', component: PagenofoundComponent }
+
+];
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+
+    BlogsComponent,
+
+
+    PagenofoundComponent,
+
+
+    HotelComponent,
+
+
+    FoodsComponent,
+
+
+    PlaceComponent,
+
+
+    TraditionComponent,
+
+
+    ProductComponent,
+
+
+    DisplayComponent,
+
+
+    ProvinceComponent,
+
+
+    HotProvinceComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
   bootstrap: [AppComponent]
