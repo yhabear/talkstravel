@@ -3,10 +3,22 @@
         <div class="col-md-6">
           <div class="card">
             <div class="card-header text-center text-white bg-dark">
-              เข้าสู่ระบบ
+              สมัครสมาชิก
             </div>
             <div class="card-body">
               <form>
+                    <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Name</label>
+                            <div class="col-sm-9">
+                              <input type="name" class="form-control">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Lastname</label>
+                            <div class="col-sm-9">
+                              <input type="lastname" class="form-control">
+                            </div>
+                          </div>
                 <div class="form-group row">
                   <label class="col-sm-3 col-form-label">Email</label>
                   <div class="col-sm-9">
@@ -21,14 +33,14 @@
                 </div>
                 <div class="row">
                   <div class="col-6 text-left">
-                    <a class="text-muted" [routerLink]="['/Singup']">
-                      สมัครสมาชิกใหม่ ?
+                    <a class="text-muted" [routerLink]="['/Login']">
+                      เข้าสู่ระบบ
                     </a>
                   </div>
                   <div class="col-6 text-right">
                     <button type="submit" class="btn btn-primary">
                       <i class="fa fa-lock" aria-hidden="true"></i>
-                      เข้าสู่ระบบ
+                      สมัครสมาชิก
                     </button>
                   </div>
                 </div>

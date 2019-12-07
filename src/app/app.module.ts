@@ -15,11 +15,14 @@ import { ProductComponent } from './product/product.component';
 import { DisplayComponent } from './display/display.component';
 import { ProvinceComponent } from './province/province.component';
 import { HotProvinceComponent } from './hot-province/hot-province.component';
+import { SignupComponent } from './components/signup/signup.component';
+
 
 // Routes
 const appRoutes: Routes = [
   { path: 'Home', component: HomeComponent },
   { path: 'Login', component: LoginComponent },
+  { path: 'Singup', component: SignupComponent },
   { path: 'Blogs', component: BlogsComponent },
   { path: 'Hotel', component: HotelComponent },
   { path: 'Foods', component: FoodsComponent },
@@ -72,7 +75,11 @@ const appRoutes: Routes = [
     ProvinceComponent,
 
 
-    HotProvinceComponent
+    HotProvinceComponent,
+
+
+    SignupComponent,
+
   ],
   imports: [
     BrowserModule,
