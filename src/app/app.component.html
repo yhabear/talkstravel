@@ -1,67 +1,78 @@
-<header>
-    <img src="assets/img/3.png" class="img-fluid" alt="Responsive image">
-</header>
+<div class="page-container">
+    <header>
+        <img src="assets/img/banner.png" class="img-fluid" alt="Responsive image">
+    </header>
 
-<body>
+    <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
-        <a class="navbar-brand" href="#">TalksTravel <i class="fa fa-rocket" aria-hidden="true"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/Home" routerLinkActive="active">หน้าแรก</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/Home" routerLinkActive="active">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true">
                     รีวิว
                   </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                        <a class="dropdown-item" routerLink="/Hotel" routerLinkActive="active">โรงแรม</a>
-                        <a class="dropdown-item" routerLink="/Foods" routerLinkActive="active">อาหาร</a>
-                        <a class="dropdown-item" routerLink="/Place" routerLinkActive="active">สถานที่</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/BLOGS" routerLinkActive="active">BLOGS</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                            <a class="dropdown-item" routerLink="/Hotel" routerLinkActive="active">โรงแรม</a>
+                            <a class="dropdown-item" routerLink="/Foods" routerLinkActive="active">อาหาร</a>
+                            <a class="dropdown-item" routerLink="/Place" routerLinkActive="active">สถานที่</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/Blogs" routerLinkActive="active">BLOGS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true">
                     อีเว้นท์
                   </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item" routerLink="/Tradition" routerLinkActive="active">ประเพณี</a>
-                        <a class="dropdown-item" routerLink="/Product" routerLinkActive="active">สินค้า</a>
-                        <a class="dropdown-item" routerLink="/Display" routerLinkActive="active">การแสดง/คอนเสิร์ต</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                            <a class="dropdown-item" routerLink="/Tradition" routerLinkActive="active">ประเพณี</a>
+                            <a class="dropdown-item" routerLink="/Product" routerLinkActive="active">สินค้า</a>
+                            <a class="dropdown-item" routerLink="/Display" routerLinkActive="active">การแสดง/คอนเสิร์ต</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true">
                     ท่องเที่ยว
                   </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                        <a class="dropdown-item" routerLink="/Province" routerLinkActive="active">จังหวัดแนะนำ</a>
-                        <a class="dropdown-item" routerLink="/HotPro" routerLinkActive="active">6 จังหวัดห้ามพลาด</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" routerLink="/Login" routerLinkActive="active">เข้าสู่ระบบ</a>
-                </li>
-                <li class="nav-item">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                            <a class="dropdown-item" routerLink="/Province" routerLinkActive="active">จังหวัดแนะนำ</a>
+                            <a class="dropdown-item" routerLink="/HotPro" routerLinkActive="active">6 จังหวัดห้ามพลาด</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="ค้นหา" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">ค้นหา</button>
+                </form>
+                <ul class="navbar-nav uk-margin-right">
+                    <li class="nav-item uk-margin-right">
+                        <a class="nav-link" routerLink="/Login" routerLinkActive="active">เข้าสู่ระบบ</a>
+                    </li>
+                    <li class="nav-item uk-margin-right">
                         <a class="nav-link" routerLink="/Singup" routerLinkActive="active">สมัครสมาชิก</a>
                     </li>
-            </ul>
-        </div>
-    </nav>
-</body>
+                </ul>
+            </div>
+        </nav>
+    </body>
 
-<router-outlet></router-outlet>
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+
+    <footer>
+        <div class="row text-center text-light">
+            <div class="col-md-8">เว็บไซต์นี้เป็นส่วนหนึ่งของรายวิชา<br>CSS2208 การพัฒนาโปรแกรมประยุกต์ฐานข้อมูลกับเว็บ<br>จัดทำขึ้นเพื่อศึกษาและสร้างเว็บไซต์<br>และประยุกต์ใช้งานกับฐานข้อมูล</div>
+            <div class="col-6 col-md-4">จัดทำโดย<br>1.สิริภณ เวียงสิมา 59122519048<br>2.ธิดามาศ ผาอิดดี 59122519064<br>3.ฟาริดา จำนงค์พรต 59122519066</div>
+        </div>
+
+
+        <hr>
+        <div class="text-center text-light">TalksTravel | copyright 2019</div>
+    </footer>
+</div>
