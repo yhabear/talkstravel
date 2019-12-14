@@ -16,6 +16,13 @@ import { DisplayComponent } from './display/display.component';
 import { ProvinceComponent } from './province/province.component';
 import { HotProvinceComponent } from './hot-province/hot-province.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from '../environments/environment';
+import { AuthService } from './services/auth.service';
+
 
 
 // Routes
@@ -41,51 +48,33 @@ const appRoutes: Routes = [
 
 ];
 
-
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-
     BlogsComponent,
-
-
     PagenofoundComponent,
-
-
     HotelComponent,
-
-
     FoodsComponent,
-
-
     PlaceComponent,
-
-
     TraditionComponent,
-
-
     ProductComponent,
-
-
     DisplayComponent,
-
-
     ProvinceComponent,
-
-
     HotProvinceComponent,
-
-
     SignupComponent,
-
+    
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
     RouterModule.forRoot(appRoutes),
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

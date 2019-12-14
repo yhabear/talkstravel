@@ -3,8 +3,18 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
-};
+  firebase: {
+    apiKey: "AIzaSyC6hzKH3pswuRm5e1XN_8RBxmk7hOd64Us",
+    authDomain: "talktravel-b80a1.firebaseapp.com",
+    databaseURL: "https://talktravel-b80a1.firebaseio.com",
+    projectId: "talktravel-b80a1",
+    storageBucket: "talktravel-b80a1.appspot.com",
+    messagingSenderId: "488103152540",
+    appId: "1:488103152540:web:a8cb88913d096ca4145659",
+    measurementId: "G-HNSC2N1L3X"
+  }
+  };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
