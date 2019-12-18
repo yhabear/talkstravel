@@ -1,7 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { AuthService } from './services/auth.service';
 import { Router } from '@angular/router';
 declare var $: any;
+=======
+import {AngularFireDatabase} from '@angular/fire/database';
+import {Observable} from 'rxjs';
+
+declare var $:any;
+>>>>>>> 52fdcb3df3b4b084148e74bc0274a85893336705
 
 @Component({
   selector: 'app-root',
@@ -13,9 +20,20 @@ export class AppComponent implements OnInit {
 
 
   title = 'talkstravel';
+<<<<<<< HEAD
   constructor(
     private router: Router,
     private auth: AuthService) { }
+=======
+  description = 'Angular-Fire-Demo';
+
+  itemValue = '';
+  items: Observable<any[]>;
+
+  constructor() {
+    
+   }
+>>>>>>> 52fdcb3df3b4b084148e74bc0274a85893336705
 
   ngOnInit() {
     $(document).ready(function () {
