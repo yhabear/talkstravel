@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
@@ -22,31 +21,11 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
 import { AuthService } from './services/auth.service';
-
-
-
-// Routes
-const appRoutes: Routes = [
-  { path: 'Home', component: HomeComponent },
-  { path: 'Login', component: LoginComponent },
-  { path: 'Singup', component: SignupComponent },
-  { path: 'Blogs', component: BlogsComponent },
-  { path: 'Hotel', component: HotelComponent },
-  { path: 'Foods', component: FoodsComponent },
-  { path: 'Place', component: PlaceComponent },
-  { path: 'Tradition', component: TraditionComponent },
-  { path: 'Product', component: ProductComponent },
-  { path: 'Display', component: DisplayComponent },
-  { path: 'Province', component: ProvinceComponent },
-  { path: 'HotPro', component: HotProvinceComponent },
-  {
-    path: '',
-    redirectTo: '/Home',
-    pathMatch: 'full'
-  },
-  { path: '**', component: PagenofoundComponent }
-
-];
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AuthGuard } from './shared/guard/auth.guard';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -64,17 +43,20 @@ const appRoutes: Routes = [
     ProvinceComponent,
     HotProvinceComponent,
     SignupComponent,
+    DashboardComponent,
+  
     
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    RouterModule.forRoot(appRoutes),
+    BrowserAnimationsModule,
   ],
-  providers: [AuthService],
+  providers: [AuthService,AuthGuard,AngularFireDatabase],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

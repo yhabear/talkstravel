@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-fancy-lib": [
+        "dist/ng-fancy-lib"
+      ],
+      "ng-fancy-lib/*": [
+        "dist/ng-fancy-lib/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
