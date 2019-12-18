@@ -4,14 +4,14 @@
 
 export const environment = {
   firebase: {
-    apiKey: "AIzaSyC6hzKH3pswuRm5e1XN_8RBxmk7hOd64Us",
-    authDomain: "talktravel-b80a1.firebaseapp.com",
-    databaseURL: "https://talktravel-b80a1.firebaseio.com",
-    projectId: "talktravel-b80a1",
-    storageBucket: "talktravel-b80a1.appspot.com",
-    messagingSenderId: "488103152540",
-    appId: "1:488103152540:web:a8cb88913d096ca4145659",
-    measurementId: "G-HNSC2N1L3X"
+    apiKey: "AIzaSyDoSVWWKFltjKKNO6qTkzJeGEi1t4HvucA",
+    authDomain: "talkstravel2.firebaseapp.com",
+    databaseURL: "https://talkstravel2.firebaseio.com",
+    projectId: "talkstravel2",
+    storageBucket: "talkstravel2.appspot.com",
+    messagingSenderId: "461609605413",
+    appId: "1:461609605413:web:3b72a314029a3b84e7a2cc",
+    measurementId: "G-SCJBQXR7NZ"
   }
   };
 

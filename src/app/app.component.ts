@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {AngularFireDatabase} from '@angular/fire/database';
+import {Observable} from 'rxjs';
+
 declare var $:any;
 
 @Component({
@@ -10,7 +13,14 @@ declare var $:any;
 export class AppComponent implements OnInit {
 
   title = 'talkstravel';
-  constructor() { }
+  description = 'Angular-Fire-Demo';
+
+  itemValue = '';
+  items: Observable<any[]>;
+
+  constructor() {
+    
+   }
 
   ngOnInit() {
     $(document).ready(function () {
