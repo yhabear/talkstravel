@@ -26,6 +26,8 @@ import { AngularFireDatabase } from 'angularfire2/database';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AuthGuard } from './shared/guard/auth.guard';
 import { AppRoutingModule } from './app-routing.module';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { Routes, RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -55,6 +57,7 @@ import { AppRoutingModule } from './app-routing.module';
     AngularFirestoreModule,
     AngularFireAuthModule,
     BrowserAnimationsModule,
+    AngularFireDatabaseModule,
   ],
   providers: [AuthService,AuthGuard,AngularFireDatabase],
   bootstrap: [AppComponent]
