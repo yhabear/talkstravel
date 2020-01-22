@@ -14,6 +14,8 @@ import { ProvinceComponent } from './province/province.component';
 import { HotProvinceComponent } from './hot-province/hot-province.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AuthGuard } from './shared/guard/auth.guard';
+import { SearchComponent } from './search/search.component';
+
 
 
 const appRoutes: Routes = [
@@ -30,6 +32,7 @@ const appRoutes: Routes = [
   { path: 'Province', component: ProvinceComponent },
   { path: 'HotPro', component: HotProvinceComponent },
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+  { path: 'Search', component: SearchComponent },
   {
     path: '',
     redirectTo: '/Home',

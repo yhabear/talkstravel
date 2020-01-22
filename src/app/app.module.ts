@@ -28,6 +28,8 @@ import { AuthGuard } from './shared/guard/auth.guard';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { Routes, RouterModule } from '@angular/router';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,7 @@ import { Routes, RouterModule } from '@angular/router';
     HotProvinceComponent,
     SignupComponent,
     DashboardComponent,
+    SearchComponent,
   
     
   ],
@@ -58,8 +61,11 @@ import { Routes, RouterModule } from '@angular/router';
     AngularFireAuthModule,
     BrowserAnimationsModule,
     AngularFireDatabaseModule,
+    Ng2SearchPipeModule,
   ],
   providers: [AuthService,AuthGuard,AngularFireDatabase],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  NgbdTypeaheadFormat
+}
